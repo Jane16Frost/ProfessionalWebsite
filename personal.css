@@ -1,0 +1,214 @@
+/* FONTS
+ Stylized = font-family: 'VT323', monospace;
+ font-weight availabe = 400
+ Basic = font-family: 'Inconsolata', monospace;
+font-weight availabe = 300, 600, 900
+ */
+/* COLOUR PALLET
+Dark Purple = #511c48
+Light Purple = #b87dad
+light Gray = #bebebe
+Dark Gray = #292929
+ */
+body
+{
+text-align: center;
+}
+h1,h2,h3,h4,h5,h6
+{
+font-family: 'VT323', monospace;
+}
+h2
+{
+  font-size: 42px;
+}
+h4
+{
+  font-size: 28px;
+}
+p
+{
+font-family: 'Inconsolata', monospace;
+font-weight: 300;
+font-size: 20px;
+}
+/* Generic Classes*/
+.padded
+{
+  padding: 9% 7%;
+}
+.lightBacking
+{
+  background-color: #b87dad;
+color: #511c48;
+}
+.lightBacking p
+{
+  color: #292929;
+}
+.darkBacking
+{
+  background-color: #511c48;
+  color: #b87dad;
+}
+.darkBacking p
+{
+  color: #bebebe;
+}
+
+ /* Intro */
+.Intro
+{
+text-align: left;
+}
+
+ .BioPic
+ {
+   width: 100%;
+ }
+ .Intro h1
+ {
+   font-size: 48px;
+ }
+
+ @media (min-width: 1200px)
+ {
+   .bio
+   {
+   padding: 3% 0 5% 3%;
+   }
+   .Intro h1
+   {
+     font-size: 62px;
+   }
+ }
+ @media (max-width: 767px)
+ {
+   .Intro
+   {
+   text-align: center;
+   }
+   .Intro h1
+   {
+     font-size: 62px;
+   }
+   .BioPic
+   {
+     width: 70%;
+   }
+   p
+   {
+     font-size: 24px;
+   }
+ }
+
+/* ArtProjects */
+.ArtProjects
+{
+padding: 25% 7%;
+}
+
+
+/* Websites */
+.Websites
+{
+background-color: #292929;
+color: #bebebe;
+}
+.WebImg
+{
+  width: 60%;
+}
+/* buttonPage */
+.buttonPage
+{
+padding: 15% 7%;
+}
+.buttonText
+{
+  font-size: 72px;
+}
+.LikeEm {
+  background-color: #b87dad;
+  border-radius: 10px;
+  color: #292929;
+  font-size: 20px;
+  padding: 10px 40px;
+  border: solid #511c48 2px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  margin-top: 7%;
+}
+
+.LikeEm:hover {
+  background: #511c48;
+  color: #bebebe;
+}
+
+/* ContactMe */
+.ContactMe
+{
+
+}
+.ContactEm {
+  background-color: #511c48;
+  border-radius: 10px;
+  color: #bebebe;
+  font-size: 16px;
+  padding: 5px 20px;
+  border: solid #b87dad 2px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+}
+
+.ContactEm:hover {
+  background: #b87dad;
+  color: #292929;
+}
+
+.ContactMe h4
+{
+  padding-bottom: 5%;
+color: #bebebe;
+}
+
+
+
+
+
+
+/* GORETOBER SITE */
+.goretoberImg
+{
+  width: 100%;
+  padding: 7% 0;
+}
+.GoretoberStyle
+{
+  padding: 5% 2%;
+}
+.ButtonCard
+{
+  padding: 10% 0;
+  margin: 33% 0;
+}
+.goretoberBtn
+{
+  border-radius: 30px;
+  color: Red;
+  font-size: 22px;
+  padding: 10px 20px;
+  border: solid Black 4px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  text-decoration: none;
+}
+.goretoberBtn:hover
+{
+  background: DarkRed;
+  color: Black;
+}
+.grayBacking
+{
+  background-color: #292929;
+}
