@@ -1,5 +1,5 @@
  var pattern = [];
- var score = -1;
+ var score = 0;
  var playerPattern = 0;
  //
  var gameActive = false;
@@ -10,20 +10,6 @@
    // pattern = pickColor(pattern);
    // playButton(pattern[pattern.length -1]);
  });
-
-  $(document).keypress(function()
-  {
-    if(!gameActive)
-    {
-      pattern = [];
-      score = -1;
-      playerPattern = 0;
-      pattern = pickColor(pattern);
-      playSequence(pattern);
-      gameActive = true;
-      $("#level-title").html("Game Started");
-    }
-  });
 
   //This function detects user input and presses the buttons accordigly
   $(".btn").click(function() {
@@ -45,8 +31,18 @@
         gameOverSound.play();
         gameActive = false;
 
-        $("#level-title").html("Game Over! Press any key to restart.");
+        $("#level-title").html("Game Over! Press any button to restart.");
       }
+    }
+    else
+    {
+        pattern = [];
+        score = -1;
+        playerPattern = 0;
+        pattern = pickColor(pattern);
+        playSequence(pattern);
+        gameActive = true;
+        $("#level-title").html("Game Started");
     }
 
     if (playerPattern == pattern.length) {
