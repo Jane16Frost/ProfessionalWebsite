@@ -10,124 +10,181 @@ Light Purple = #b87dad
 light Gray = #bebebe
 Dark Gray = #292929
  */
-body
-{
-text-align: center;
+body {
+  text-align: center;
 }
-h1,h2,h3,h4,h5,h6
-{
-font-family: 'VT323', monospace;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'VT323', monospace;
 }
-h2
-{
+
+h2 {
   font-size: 42px;
 }
-h4
-{
+
+h4 {
   font-size: 28px;
 }
-p
-{
-font-family: 'Inconsolata', monospace;
-font-weight: 300;
-font-size: 20px;
+
+p, a {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  font-size: 20px;
 }
-/* Generic Classes*/
-.padded
-{
+
+/************************************
+          Generic Classes
+*************************************/
+.padded {
   padding: 9% 7%;
 }
-.lightBacking
-{
+
+.lightBacking {
   background-color: #b87dad;
-color: #511c48;
+  color: #511c48;
 }
-.lightBacking p
-{
+
+.lightBacking p {
   color: #292929;
 }
-.darkBacking
-{
+
+.darkBacking {
   background-color: #511c48;
   color: #b87dad;
 }
-.darkBacking p
-{
+
+.darkBacking p,a {
   color: #bebebe;
 }
 
- /* Intro */
-.Intro
-{
-text-align: left;
+/*******************************
+            Intro
+ S********************************/
+.Intro {
+  text-align: left;
 }
 
- .BioPic
- {
-   width: 100%;
- }
- .Intro h1
- {
-   font-size: 48px;
- }
+.BioPic {
+  width: 100%;
+}
 
- @media (min-width: 1200px)
- {
-   .bio
-   {
-   padding: 3% 0 5% 3%;
-   }
-   .Intro h1
-   {
-     font-size: 62px;
-   }
- }
- @media (max-width: 767px)
- {
-   .Intro
-   {
-   text-align: center;
-   }
-   .Intro h1
-   {
-     font-size: 62px;
-   }
-   .BioPic
-   {
-     width: 70%;
-   }
-   p
-   {
-     font-size: 24px;
-   }
- }
+.Intro h1 {
+  font-size: 48px;
+}
 
-/* ArtProjects */
-.ArtProjects
+@media (max-width: 992px) {
+  .Intro {
+    text-align: center;
+  }
+
+  .Intro h1 {
+    font-size: 62px;
+  }
+
+  .Intro h3 {
+    font-size: 36px;
+  }
+
+  .BioPic {
+    width: 70%;
+  }
+
+  .Intro p {
+    font-size: 24px;
+  }
+}
+
+/**************************
+       ArtProjects
+***************************/
+.ArtProjects {
+   padding: 3% 7%;
+}
+.ArtProjects h1
 {
-padding: 25% 7%;
+padding-bottom: 2%;
+}
+.carousel-item {
+  background-color: #292929;
+  padding: 2% 3%;
+}
+
+.artText {
+  text-align: left;
+  font-size: 24px;
+  text-decoration: none;
+}
+.artText:hover
+{
+  color: #bebebe;
+}
+.artHeader
+{
+  text-align: left;
+  padding-top: 2%;
+  font-size: 36px;
+}
+.artImg {
+  width: 90%;
+  padding: 7% 0;
+}
+.artLink
+{
+  position: absolute;
+  left: 35%;
+  bottom: 8%;
 }
 
 
-/* Websites */
-.Websites
+@media (max-width: 992px)
 {
-background-color: #292929;
-color: #bebebe;
+
+  .carousel-item
+  {
+    padding: 5% 5%;
+  }
+  .artHeader {
+    text-align: center;
+    font-size: 36px;
+  }
+.artText {
+  font-size: 20px;
 }
-.WebImg
-{
+  .artImg {
+    width: 80%;
+    padding: 3% 0;
+  }
+  .artLink
+  {
+    bottom: 3%;
+    left: 7%;
+  }
+
+}
+
+/*******************************
+             Websites
+***********************************/
+.Websites {
+  background-color: #292929;
+  color: #bebebe;
+}
+
+.WebImg {
   width: 60%;
 }
-/* buttonPage */
-.buttonPage
-{
-padding: 15% 7%;
+
+/*********************************
+         Button Page
+**********************************/
+.buttonPage {
+  padding: 15% 7% 2%;
 }
-.buttonText
-{
+
+.buttonText {
   font-size: 72px;
 }
+
 .LikeEm {
   background-color: #b87dad;
   border-radius: 10px;
@@ -138,6 +195,7 @@ padding: 15% 7%;
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
   margin-top: 7%;
+  text-decoration: none;
 }
 
 .LikeEm:hover {
@@ -145,11 +203,32 @@ padding: 15% 7%;
   color: #bebebe;
 }
 
-/* ContactMe */
-.ContactMe
-{
-
+.far-right {
+  margin-top: 10%;
+  text-align: right;
 }
+
+.simon {
+  background-color: #b87dad;
+  border-radius: 10px;
+  color: #292929;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: solid #511c48 1px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+}
+
+.simon:hover {
+  background: #511c48;
+  color: #bebebe;
+}
+
+/************************
+        ContactMe
+************************/
+.ContactMe {}
+
 .ContactEm {
   background-color: #511c48;
   border-radius: 10px;
@@ -166,34 +245,29 @@ padding: 15% 7%;
   color: #292929;
 }
 
-.ContactMe h4
-{
+.ContactMe h4 {
   padding-bottom: 5%;
-color: #bebebe;
+  color: #bebebe;
 }
 
-
-
-
-
-
-/* GORETOBER SITE */
-.goretoberImg
-{
+/**********************
+    GORETOBER SITE
+**********************/
+.goretoberImg {
   width: 100%;
   padding: 7% 0;
 }
-.GoretoberStyle
-{
+
+.GoretoberStyle {
   padding: 5% 2%;
 }
-.ButtonCard
-{
+
+.ButtonCard {
   padding: 10% 0;
   margin: 33% 0;
 }
-.goretoberBtn
-{
+
+.goretoberBtn {
   border-radius: 30px;
   color: Red;
   font-size: 22px;
@@ -203,12 +277,25 @@ color: #bebebe;
   font-weight: 900;
   text-decoration: none;
 }
-.goretoberBtn:hover
-{
+
+.goretoberBtn:hover {
   background: DarkRed;
   color: Black;
 }
-.grayBacking
-{
+
+.grayBacking {
   background-color: #292929;
+}
+
+/**************************
+  Under Construciton Page
+***************************/
+
+.UnderCon
+{
+  padding: 7%;
+}
+.UnderCon h1
+{
+  font-size: 64px;
 }

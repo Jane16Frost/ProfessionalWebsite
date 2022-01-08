@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <!--linking bootstrap -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
   <!-- Exteral Links (fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +24,12 @@
   <div class="Intro padded lightBacking">
     <div class="row">
 
-      <div class="col-md-5">
+      <div class="col-lg-5">
         <!-- Insert and Size Picture -->
         <img class="BioPic" src="Images(SiteWide)\GlitchyCasual.jpg" alt="A Picture of glitch relaxing and sipping hot chocolate">
       </div>
 
-      <div class="col-md-7 bio">
+      <div class="col-lg-7 bio">
         <!-- Insert Header/Title and Bio -->
         <h1>Jane16Frost</h1>
         <h3>Profesional BullShitter at SMRTQ Enterprises</h3>
@@ -48,15 +49,82 @@
 
   <!-- Art Projects -->
   <div class="ArtProjects padded darkBacking">
-    <h1 class="buttonText">Reserved for Art Projects</h1>
+    <h1 class="buttonText">Art Projects</h1>
     <!-- Insert Carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause = "hover">
 
-    <!-- Project 1 = Goretober 2020 -->
+      <div class="carousel-inner">
 
-    <!-- Project 2 = Goretober 2021 -->
+        <div class="carousel-item active">
+          <!-- Project 1 = Goretober 2020 -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="Goretober2020\Day9.png" alt="" class="artImg">
+            </div>
+            <div class="col-lg-8">
+              <h3 class = "artHeader">Goretober 2020</h3>
+              <p class="artText">Goretober is an internet wide art challenge taking place in October. The goal is to make a new art
+                piece every day with the help of a prompt list.
+              <br>For the 2020 challenge I dedicated a lot of time to each piece, allowing me to push my limits and
+              make incredible pieces each day. All the pieces were completed on time with full color and shading. I
+              had so much fun with this challenge and it brought my digital art skills to the next level.
+             </p>
+             <br class = "hidden"> <br class="hidden">
+             <div class="artLink">
+             <a href="Goretober2020.html" class="artText">Learn More ></a>
+             </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Project 3 = Art Gallery Page -->
+        <div class="carousel-item">
+          <!-- Project 2 = Goretober 2021 -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="Goretober2021\GoretoberDay14.png" alt="" class="artImg">
+            </div>
+            <div class="col-lg-8">
+              <h3 class="artHeader">Goretober 2021</h3>
+              <p class="artText">Goretober is an internet wide art challenge taking place in October. The goal is to
+                make a new art piece every day with the help of a prompt list.
+              <br>For the 2021 challenge I dedicated 2 to 3 hours to each piece. Every day was a rush to the finish
+              line and was worked on in the spare time I had each day. I completed all the pieces on time with a messy
+              art style and black and white color scheme. It was a difficult challenge but pushed my art and design
+              skills to the next level.
+              </p>
+              <br class = "hidden"> <br class="hidden">
+              <div class="artLink">
+              <a href="Goretober2021.html" class="artText">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="carousel-item">
+          <!-- Project 3 = Art Gallery -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="Images(SiteWide)\GoreyAngelSFX.png" alt="" class="artImg">
+            </div>
+            <div class="col-lg-8">
+              <h3 class="artHeader" >Art Gallery</h3>
+              <p class="artText">A random collection of completed art.
+              <br>When I don't have a current project. I love to play around with concepts and ideas. I started as a
+              traditional artist but I’ve grown my skills to be great at digital art, too. I love showing off my art and
+              improvement over the years and this Art Gallery is where I’ll show and tell you all about my individual pieces.
+              </p>
+              <br class = "hidden"> <br class="hidden">
+              <div class="artLink">
+              <a href="ArtGallery.html" class="artText">Learn More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <p style = "color:#A73997;">To Pause - Hover Over Slide</p>
   </div>
 
   <!-- Websites/Projects -->
@@ -95,18 +163,21 @@
 
   <!-- Do you Like Buttons -->
 
-  <div class="buttonPage padded lightBacking">
+  <div class="buttonPage lightBacking">
     <!-- H2 asking if you like buttons -->
     <h2 class="buttonText">Do you like buttons?</h2>
     <!-- Button Linking to Button Page -->
     <!-- href="Buttons.html"-->
-   <a class="btn LikeEm" role="button" href="Buttons.html">YES!</a>
+    <a class="btn LikeEm" role="button" href="Buttons.html">YES!</a>
+    <div class="far-right">
+      <a class="btn simon" role="button" href="simon.html">Simon Says <br> "Click Me"</a>
+    </div>
 
   </div> <!-- closes Button page -->
 
   <!-- Get in Touch -->
   <div class="ContactMe padded darkBacking">
-<!--
+    <!--
           Get In Touch
 Interested in Art or Website Design?
     Check out my previous work
@@ -116,6 +187,8 @@ Interested in Art or Website Design?
     <!-- Check it out button -->
     <a class="btn ContactEm" href="Goretober2021.html" role="button">Check out my previous work</a>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
