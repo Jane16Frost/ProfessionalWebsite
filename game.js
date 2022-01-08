@@ -1,5 +1,5 @@
  var pattern = [];
- var score = 0;
+ var score = 1;
  var playerPattern = 0;
  //
  var gameActive = false;
