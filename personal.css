@@ -57,6 +57,10 @@ p, a {
   color: #bebebe;
 }
 
+.grayBacking {
+  background-color: #292929;
+}
+
 /*******************************
             Intro
  S********************************/
@@ -253,39 +257,7 @@ padding-bottom: 2%;
 /**********************
     GORETOBER SITE
 **********************/
-.goretoberImg {
-  width: 100%;
-  padding: 7% 0;
-}
 
-.GoretoberStyle {
-  padding: 5% 2%;
-}
-
-.ButtonCard {
-  padding: 10% 0;
-  margin: 33% 0;
-}
-
-.goretoberBtn {
-  border-radius: 30px;
-  color: Red;
-  font-size: 22px;
-  padding: 10px 20px;
-  border: solid Black 4px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.goretoberBtn:hover {
-  background: DarkRed;
-  color: Black;
-}
-
-.grayBacking {
-  background-color: #292929;
-}
 
 /**************************
   Under Construciton Page
