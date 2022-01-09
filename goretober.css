@@ -11,6 +11,7 @@ light Gray = #bebebe
 Dark Gray = #292929
  */
 body {
+  margin: 0;
   text-align: center;
 }
 
@@ -179,4 +180,65 @@ text-align: right;
 .String
 {
   padding: 0% 5%;
+}
+
+/***********************
+    Goretober 2020
+************************/
+.mainBlock
+{
+  padding: 20% 5%;
+}
+.lgImg
+{
+  width: 100%;
+  margin: 5% 0;
+}
+.mdImg
+{
+  width: 80%;
+  margin: 2% 0;
+}
+.smImg
+{
+  width: 65%;
+  margin: 1% 0;
+}
+.xsImg
+{
+  width: 50%;
+  margin: 1% 0;
+}
+.goretoberBlock
+{
+padding: 0%;
+}
+.alignLeft
+{
+  text-align: left;
+}
+.alignRight
+{
+  text-align: right;
+}
+.alignCenter
+{
+  text-align: center;
+  display: alignCenter;
+}
+.xsDown
+{
+margin-top: 5%;
+}
+.smDown
+{
+  margin-top: 10%;
+}
+.mdDown
+{
+margin-top: 25%;
+}
+.lgDown
+{
+  margin-top: 50%;
 }
