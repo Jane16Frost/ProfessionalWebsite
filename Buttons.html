@@ -10,18 +10,125 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;900&family=VT323&display=swap" rel="stylesheet">
   <!-- personal images and css -->
   <link rel="icon" href="Images(SiteWide)\favicon.ico">
-  <link rel="stylesheet" href="personal.css">
+  <link rel="stylesheet" href="buttons.css">
 </head>
 
-<body class="lightBacking">
-  <div class="UnderCon">
+<body class="">
+  <!-- - - - - - - - - - - - - - - -
+        Header / Intro
+  - - - - - - - - - - - - - - - - -->
+  <div class="lightBacking padded">
 
-    <h1>Page Under Construstion</h1>
+    <h1>Press a Button</h1>
 
+  </div> <!-- closes <header> -->
+
+  <!-- - - - - - - - - - - - - - - -
+          Button Section
+  - - - - - - - - - - - - - - - - -->
+  <div class="grayBacking">
+    <!-- - - - - - - - - - - - - - - -
+        Button 1 - Click Me
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <div class="row">
+
+      </div>
+      <button type="button" name="button" class="basicBtn magenta"></button>
+      <button type="button" name="button" class="basicBtn blue"></button>
+      <button type="button" name="button" class="basicBtn yellow"></button>
+      <button type="button" name="button" class="basicBtn red"></button>
+      <button type="button" name="button" class="basicBtn green"></button>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - -
+        Button 2 - Counter
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <h3 class="counterTitle">You've pressed the button 0 times.</h3>
+      <button type="button" name="button" class="counterBtn red"></button>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - -
+        Button 3 - toggle button
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <button type="button" name="button" class="toggleBtn togMag magenta"></button>
+      <button type="button" name="button" class="toggleBtn togCy cyan"></button>
+      <button type="button" name="button" class="toggleBtn togYel yellow"></button>
+    </div>
+    <!-- - - - - - - - - - - - - - - -
+        Button 4 - color changer
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+
+      <button type="button" name="button" id="colorChanger"></button>
+
+    </div>
+    <!-- - - - - - - - - - - - - - - -
+        Button 5 - simon Button and noise
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+
+      <button type="button" name="button" class="noiseButton sound1 cyan"></button>
+      <button type="button" name="button" class="noiseButton sound2 green"></button>
+      <button type="button" name="button" class="noiseButton sound3 magenta"></button>
+      <button type="button" name="button" class="noiseButton sound4 yellow"></button>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - -
+        Button 6 - button effects other button
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <button type="button" name="button" class="backwordsButton BB1 blue"></button>
+      <button type="button" name="button" class="backwordsButton BB2 red"></button>
+      <button type="button" name="button" class="backwordsButton BB3 green"></button>
+      <button type="button" name="button" class="backwordsButton BB4 yellow"></button>
+      <button type="button" name="button" class="backwordsButton BB5 magenta"></button>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - -
+        Button 7 -  Magic 8 ball
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <button type="button" name="button" class="Magic8Ball crystalBlue">Press for a fortune.</button>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - -
+        Button 8 - button moves on you
+  - - - - - - - - - - - - - - - - -->
+    <div class="trickySection">
+      <button type="button" name="button" class="trickyButton cyan"></button>
+    </div>
+    <!-- - - - - - - - - - - - - - - -
+        Button 9 - Some on and some off/toggle all
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <button type="button" name="button" class="toggleAllBtn togAllBtn1 red"></button>
+      <button type="button" name="button" class="toggleAllBtn togAllBtn2 blue"></button>
+      <button type="button" name="button" class="toggleAllBtn togAllBtn3 yellow"></button>
+    </div>
+    <!-- - - - - - - - - - - - - - - -
+        Button 10 - button in creases in size
+  - - - - - - - - - - - - - - - - -->
+    <div class="buttonSection">
+      <button type="button" name="button" class="sizeBtn green"></button>
+    </div>
   </div>
-  <div class="UnderCon">
-    <a class="btn LikeEm" role="button" href="index.html">Back to HomePage</a>
-  </div>
+
+  <!-- - - - - - - - - - - - - - - -
+        Footer / Contact Me
+  - - - - - - - - - - - - - - - - -->
+
+  <div class="ContactMe padded darkBacking">
+
+    <!-- Check it out button -->
+    <a class="darkButton" href="index.html" role="button">Back to Homepage</a>
+
+
+  </div> <!-- closes footer -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="button.js" charset="utf-8"></script>
 </body>
 
 </html>
