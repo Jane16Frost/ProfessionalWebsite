@@ -12,31 +12,47 @@ Dark Gray = #292929
  */
 body {
   text-align: center;
+  margin: 0;
+  background-color: #b87dad;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'VT323', monospace;
 }
 
-h2 {
-  font-size: 42px;
-}
-
-h4 {
-  font-size: 28px;
-}
-
-p, a {
+p {
   font-family: 'Inconsolata', monospace;
   font-weight: 300;
-  font-size: 20px;
 }
 
+hr{
+  border-top: 15px;
+  border-top-color: #511c48;
+  border-top-style: double;
+  /* width: 80%; */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  }
+
+
+.textBox
+{
+  width: 55%;
+  display: inline-block;
+  /* overflow: hidden; */
+  vertical-align: top;
+}
+.pictureBox
+{
+  width: 40%;
+  display: inline-block;
+}
 /************************************
           Generic Classes
 *************************************/
 .padded {
-  padding: 9% 7%;
+  padding: 10% 5%;
 }
 
 .lightBacking {
@@ -44,7 +60,7 @@ p, a {
   color: #511c48;
 }
 
-.lightBacking p {
+.lightBacking p,a {
   color: #292929;
 }
 
@@ -61,213 +77,129 @@ p, a {
   background-color: #292929;
 }
 
-/*******************************
-            Intro
- S********************************/
-.Intro {
-  text-align: left;
-}
-
-.BioPic {
+.picture {
   width: 100%;
 }
-
-.Intro h1 {
-  font-size: 48px;
+.pictureFull{
+  width: 80%;
 }
-
-@media (max-width: 992px) {
-  .Intro {
-    text-align: center;
-  }
-
-  .Intro h1 {
-    font-size: 62px;
-  }
-
-  .Intro h3 {
-    font-size: 36px;
-  }
-
-  .BioPic {
-    width: 70%;
-  }
-
-  .Intro p {
-    font-size: 24px;
-  }
+.fadePicture{
+  border-radius: 50px;
 }
-
-/**************************
-       ArtProjects
-***************************/
-.ArtProjects {
-   padding: 3% 7%;
-}
-.ArtProjects h1
-{
-padding-bottom: 2%;
-}
-.carousel-item {
-  background-color: #292929;
-  padding: 2% 3%;
-}
-
-.artText {
-  text-align: left;
-  font-size: 24px;
-  text-decoration: none;
-}
-.artText:hover
-{
-  color: #bebebe;
-}
-.artHeader
-{
-  text-align: left;
-  padding-top: 2%;
-  font-size: 36px;
-}
-.artImg {
-  width: 90%;
-  padding: 7% 0;
-}
-.artLink
-{
-  position: absolute;
-  left: 35%;
-  bottom: 8%;
-}
-
-
-@media (max-width: 992px)
-{
-
-  .carousel-item
-  {
-    padding: 5% 5%;
-  }
-  .artHeader {
-    text-align: center;
-    font-size: 36px;
-  }
-.artText {
-  font-size: 20px;
-}
-  .artImg {
-    width: 80%;
-    padding: 3% 0;
-  }
-  .artLink
-  {
-    bottom: 3%;
-    left: 7%;
-  }
-
-}
-
-/*******************************
-             Websites
-***********************************/
-.Websites {
-  background-color: #292929;
-  color: #bebebe;
-}
-
-.WebImg {
-  width: 60%;
-}
-
-/*********************************
-         Button Page
-**********************************/
-.buttonPage {
-  padding: 15% 7% 2%;
-}
-
-.buttonText {
+.title{
   font-size: 72px;
+  margin: 5px;
+}
+.subtitle{
+   font-size: 42px;
+  margin: 5px;
+}
+.bodyText
+{
+  font-size: 24px;
+
+}
+.smallScreen{
+  display: none;
 }
 
-.LikeEm {
+@media(max-width:1200px) {
+  .subtitle{
+     font-size: 36px;
+    margin: 5px;
+  }
+  .bodyText
+  {
+    font-size: 20px;
+
+  }
+}
+
+@media (max-width: 992px) And (min-width: 685px) {
+  .bodyText
+  {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+}
+@media (max-width: 992px) {
+  .title
+  {
+    font-size: 56px;
+  }
+  .textBox
+  {
+    width: 100%;
+  }
+  .pictureBox
+  {
+    width: 40%;
+
+  }
+  .smallScreen{
+    display: inline-block;
+  }
+  .bigScreen
+  {
+    display: none;
+  }
+  .btn
+  {
+    margin: 0;
+  }
+}
+
+
+.lightBacking .btn {
   background-color: #b87dad;
-  border-radius: 10px;
   color: #292929;
+  border: solid #511c48 4px;
+
+}
+.btn{
+  border-radius: 10px;
   font-size: 20px;
   padding: 10px 40px;
-  border: solid #511c48 2px;
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  margin-top: 7%;
+  margin: 10px;
   text-decoration: none;
 }
 
-.LikeEm:hover {
+.lightBacking .btn:hover {
   background: #511c48;
   color: #bebebe;
 }
 
-.far-right {
-  margin-top: 10%;
-  text-align: right;
-}
-
-.simon {
-  background-color: #b87dad;
-  border-radius: 10px;
-  color: #292929;
-  font-size: 12px;
-  padding: 5px 10px;
-  border: solid #511c48 1px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 900;
-}
-
-.simon:hover {
-  background: #511c48;
-  color: #bebebe;
-}
-
-/************************
-        ContactMe
-************************/
-.ContactMe {}
-
-.ContactEm {
+.darkBacking .btn {
   background-color: #511c48;
-  border-radius: 10px;
   color: #bebebe;
-  font-size: 16px;
-  padding: 5px 20px;
-  border: solid #b87dad 2px;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 900;
+  border: solid #b87dad 4px;
 }
 
-.ContactEm:hover {
+.darkBacking .btn:hover {
   background: #b87dad;
   color: #292929;
 }
 
-.ContactMe h4 {
-  padding-bottom: 5%;
-  color: #bebebe;
+.topBorder{
+  border-top: 20px;
+  border-top-color: #b87dad;
+  border-top-style: double;
+  /* width: 80%; */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
-
-/**********************
-    GORETOBER SITE
-**********************/
-
-
-/**************************
-  Under Construciton Page
-***************************/
-
-.UnderCon
+.bottomBorder
 {
-  padding: 7%;
-}
-.UnderCon h1
-{
-  font-size: 64px;
+  border-bottom: 20px;
+  border-bottom-color: #b87dad;
+  border-bottom-style: double;
+  /* width: 80%; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
