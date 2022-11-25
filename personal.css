@@ -42,6 +42,7 @@ hr{
   display: inline-block;
   /* overflow: hidden; */
   vertical-align: top;
+
 }
 .pictureBox
 {
@@ -135,7 +136,7 @@ hr{
   .pictureBox
   {
     width: 40%;
-
+  text-align: center;
   }
   .smallScreen{
     display: inline-block;
@@ -202,4 +203,28 @@ hr{
   border-left: none;
   border-right: none;
 
+}
+
+.bigRedButton{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: solid black 10px;
+  background-color: #ffccee;
+  margin: auto;
+}
+.big{
+  height: 200px;
+  width: 200px;
+}
+.simonBtn{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: solid black 10px;
+  border-radius: 25px;
+}
+
+.bigRedButton:hover{
+  box-shadow: 0 0 25px #292929;
 }
