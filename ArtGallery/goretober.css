@@ -1,0 +1,279 @@
+/* FONTS
+ Stylized = font-family: 'VT323', monospace;
+ font-weight availabe = 400
+ Basic = font-family: 'Inconsolata', monospace;
+font-weight availabe = 300, 600, 900
+ */
+/* COLOUR PALLET
+Dark Purple = #511c48
+Light Purple = #b87dad
+light Gray = #bebebe
+Dark Gray = #292929
+ */
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3
+{
+  font-size: 20px;
+}
+
+p, a {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.smallScreen{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .smallScreen{
+    display: inline-block;
+  }
+  .bigScreen
+  {
+    display: none;
+  }
+  .darkButton
+  {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .darkButton
+  {
+    margin: 2%;
+  }
+
+}
+
+.topBorder
+{
+  border-top: double 20px #292929;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+.bottomBorder
+{
+  border-bottom: double 20px #292929;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+/************************************
+          Generic Classes
+*************************************/
+.imgTitle
+{
+  font-size: 36px;
+  color: #bebebe;
+}
+@media (max-width:820px) {
+  .imgTitle{
+    display: none;
+  }
+
+}
+.title2020{
+  vertical-align: top;
+}
+.faded
+{
+  border-radius: 25px;
+}
+.padded {
+  padding: 10% 5%;
+}
+
+.lightBacking {
+  background-color: #b87dad;
+  color: #511c48;
+}
+
+.lightBacking p {
+  color: #292929;
+}
+
+.darkBacking {
+  background-color: #511c48;
+  color: #b87dad;
+}
+
+.darkBacking p,a {
+  color: #bebebe;
+}
+
+.grayBacking {
+  background-color: #292929;
+  color: #bebebe;
+}
+
+.lightButton {
+  margin: 2%;
+  background-color: #b87dad;
+  border-radius: 10px;
+  color: #292929;
+  font-size: 20px;
+  padding: 10px 40px;
+  border: solid #511c48 2px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.lightButton:hover {
+  background: #511c48;
+  color: #bebebe;
+}
+
+.darkButton {
+  /* margin: 2%; */
+  background-color: #511c48;
+  border-radius: 10px;
+  color: #bebebe;
+  font-size: 16px;
+  padding: 5px 20px;
+  border: solid #b87dad 2px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+}
+
+.darkButton:hover {
+  background: #b87dad;
+  color: #292929;
+}
+
+td
+{
+  width: 20%;
+  padding: 0% 1%;
+}
+
+/*********************************************
+      Goretober2021 Styling
+**********************************************/
+/* Larger Responsive Text */
+@media (min-width: 993px)
+{
+h1
+{
+font-size: 92px;
+}
+h2
+{
+ font-size: 60px;
+}
+h3
+{
+  font-size: 26px;
+}
+p
+{
+font-size: 26px;
+}
+}
+/* Small Responsive Text */
+@media (max-width: 768px)
+{
+  h1
+  {
+    font-size: 52px;
+  }
+  h2
+  {
+    font-size: 18px;
+  }
+  h3
+  {
+    font-size: 12px;
+  }
+  p
+  {
+    font-size: 12px;
+  }
+}
+
+.spotlightImg
+{
+  width: 100%;
+}
+.lineImg
+{
+  width: 100%;
+}
+.BlurbLeft
+{
+  padding: 5%;
+}
+.BlurbLeftText
+{
+text-align: left;
+}
+.BlurbRight
+{
+  padding: 5%;
+}
+.BlurbRightText
+{
+text-align: right;
+}
+.String
+{
+  padding: 0% 5%;
+}
+/*********************************************
+      Goretober2020 Styling
+**********************************************/
+.goretoberTable{
+  padding: 10% 5%;
+}
+.picture
+{
+  width: 90%;
+}
+.bigCell
+{
+  width:36%;
+}
+.clusterCell
+{
+  width: 64%;
+}
+.smallCell
+{
+
+}
+
+/*********************************************
+      Goretober2022 Styling
+**********************************************/
+.title2022{
+  font-size: 36px;
+  color: #bebebe;
+}
+@media (max-width: 768px) {
+
+.title2022{
+  display:none;
+}
+}
