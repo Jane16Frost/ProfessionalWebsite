@@ -1,0 +1,278 @@
+/* FONTS
+ Stylized = font-family: 'VT323', monospace;
+ font-weight availabe = 400
+ Basic = font-family: 'Inconsolata', monospace;
+font-weight availabe = 300, 600, 900
+ */
+/* COLOUR PALLET
+Dark Purple = #511c48
+Light Purple = #b87dad
+light Gray = #bebebe
+Dark Gray = #292929
+ */
+
+/*
+Website Colors -
+Ivory - #FCFEF1
+Light Teal - #00CCCC
+Dark Teal - #117F84
+Dark Gray - #545D64  #313f44
+Light Gray - #A6AEB5 #c2d3d6
+
+Fonts -
+M Plus rounded 1c - 300, 500, 700, 800
+font-family: 'M PLUS Rounded 1c', sans-serif;
+
+Mukta Mahee - 200, 400, 700
+font-family: 'Mukta Mahee', sans-serif;
+ */
+ body {
+   text-align: center;
+   margin: 0;
+   background-color: #b87dad;
+ }
+
+
+
+
+ .Jane16FrostSite h1{
+   font-family: 'VT323', monospace;
+ }
+ .Jane16FrostSite h3{
+   font-family: 'VT323', monospace;
+ }
+
+ .Jane16FrostSite p {
+   font-family: 'Inconsolata', monospace;
+   font-weight: 300;
+ }
+
+ .Jane16FrostSite{
+   background-color: #b87dad;
+   color: #511c48;
+ }
+
+ .Jane16FrostSite p {
+   color: #292929;
+   margin-bottom: 5%;
+ }
+
+ .Jane16FrostSite .btn{
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+    margin: 0 3%;
+    text-decoration: none;
+    background-color: #b87dad;
+    color: #292929;
+    border: solid #511c48 4px;
+  }
+
+  .Jane16FrostSite .btn:hover {
+    background: #511c48;
+    color: #bebebe;
+  }
+  .Jane16FrostSite hr{
+    border-top: 15px;
+    border-top-color: #511c48;
+    border-top-style: double;
+    /* width: 80%; */
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 100px;
+    }
+
+  .eloSite h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+    color: #00CCCC;
+  }
+  .eloSite h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+    color: #117F84;
+  }
+
+  .eloSite p {
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #117F84;
+    background-image: linear-gradient(135deg, #00CCCC, #117F84);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .eloSite{
+    background-color: #FCFEF1;
+
+  }
+
+  .eloSite .btn {
+    padding: 1% 2%;
+    text-decoration: none;
+    color: #117F84;
+    border: 5px solid #00CCCC;
+    border-radius: 15px;
+    font-size: 28px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0 3%;
+  }
+
+  .eloSite .btn:hover {
+    background-image: linear-gradient(#00CCCC, #117F84);
+    border: 5px solid #117F84;
+    color: #FCFEF1;
+  }
+
+  .eloSite hr {
+    border-top: 15px dotted #00CCCC;
+    background-color: #FCFEF1;
+    opacity: 50%;
+    width: 60%;
+    margin-top: 100px;
+  }
+
+ .textBox
+ {
+   width: 55%;
+   display: inline-block;
+   /* overflow: hidden; */
+   vertical-align: top;
+
+ }
+ .pictureBox
+ {
+   width: 40%;
+   display: inline-block;
+   vertical-align: top;
+ }
+ /************************************
+           Generic Classes
+ *************************************/
+ .padded {
+   padding: 5%;
+   padding-top: 10%;
+ }
+
+
+
+ .grayBacking {
+   background-color: #292929;
+ }
+
+ .picture {
+   width: 100%;
+ }
+
+ .title{
+   font-size: 72px;
+   margin: 5px;
+ }
+ .subtitle{
+    font-size: 42px;
+   margin: 5px;
+ }
+ .bodyText
+ {
+   font-size: 24px;
+
+ }
+
+ .smallScreen{
+   display: none;
+ }
+
+ @media(max-width:1200px) {
+   .subtitle{
+      font-size: 36px;
+     margin: 5px;
+   }
+   .bodyText
+   {
+     font-size: 20px;
+
+   }
+ }
+
+ @media (max-width: 992px) And (min-width: 685px) {
+   .bodyText
+   {
+     width: 600px;
+     margin: 0 auto;
+   }
+
+ }
+ @media (max-width: 992px) {
+   .title
+   {
+     font-size: 56px;
+   }
+   .textBox
+   {
+     width: 100%;
+   }
+   .pictureBox
+   {
+     width: 40%;
+   text-align: center;
+   }
+   .smallScreen{
+     display: inline-block;
+   }
+   .bigScreen
+   {
+     display: none;
+   }
+   .Jane16FrostSite .btn
+   {
+     margin: 0;
+   }
+ }
+
+
+ .topBorder{
+   border-top: 20px;
+   border-top-color: #b87dad;
+   border-top-style: double;
+   /* width: 80%; */
+   border-bottom: none;
+   border-left: none;
+   border-right: none;
+ }
+ .bottomBorder
+ {
+   border-bottom: 20px;
+   border-bottom-color: #b87dad;
+   border-bottom-style: double;
+   /* width: 80%; */
+   border-top: none;
+   border-left: none;
+   border-right: none;
+
+ }
+
+ .grayBacking .btn{
+   border-radius: 10px;
+   font-size: 20px;
+   padding: 10px 40px;
+   font-family: 'Inconsolata', monospace;
+   font-weight: 900;
+   margin: 10px;
+   text-decoration: none;
+   background-color: #292929;
+   color: #bebebe;
+   border: solid #bebebe 4px;
+
+ }
+
+ .grayBacking .btn:hover{
+   background-color: #bebebe;
+   color: #292929;
+ }

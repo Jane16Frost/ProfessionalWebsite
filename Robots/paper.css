@@ -1,0 +1,170 @@
+body{
+  text-align: center;
+margin: 0;
+background-color: #292929;
+color: #bebebe;
+}
+h1{
+  font-size: 64px;
+  color: #f8f8f8;
+}
+h2{
+  font-size: 32px;
+}
+
+h3{
+  text-align: left;
+  font-size: 26px;
+
+}
+
+p{
+  text-align: left;
+  text-indent: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+h4
+{
+  margin: 2px;
+  font-size: 20px;
+}
+.picture
+{
+  border: solid #221122 1px;
+  width: 60%;
+}
+.header{
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.section{
+  width: min(80%, 800px);
+  margin: auto;
+}
+.refrences{
+  background-color: #bebebe;
+  border-radius: 50px;
+  color: #000;
+}
+.small{
+  width: min(400px,70%);
+  margin: auto;
+  padding: 2%;
+}
+.big{
+  width: min(70%, 700px);
+  margin: auto;
+  padding: 5%;
+}
+a
+{
+  display: block;
+  text-decoration: none;
+  margin: 20px 0;
+  color: #000;
+}
+.hidden
+{
+  display: none;
+}
+
+.footer{
+  background-color: #b87dad;
+  /* margin-top: 100px; */
+  padding: min(5%, 50px);
+  border-radius: 50px 50px 0 0;
+  width:80%;
+  margin: 100px auto 0;
+}
+
+.btn{
+  display: inline-block;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 40px;
+  /* font-family: 'Inconsolata', monospace; */
+  font-weight: 900;
+  margin: 10px;
+  text-decoration: none;
+  background-color: #b87dad;
+  color: #292929;
+  border: solid #511c48 4px;
+}
+
+.topBorder{
+  border-top: double 20px #292929;
+  border-left: double 20px #292929;
+  border-right: double 20px #292929;
+
+  /* border-top-color: #292929; */
+  /* border-top-style: double; */
+  /* width: 80%; */
+  border-bottom: none;
+  /* border-left: none; */
+  /* border-right: none; */
+}
+
+.btn:hover {
+  background: #511c48;
+  color: #bebebe;
+}
+
+.taskbar a{
+  font-weight: bold;
+}
+
+.smallTaskbar{
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  border-radius: 25px;
+  background-color: #b87dad;
+  right: 2%;
+  top: 2%;
+
+}
+.lines{
+  border-top: double 18px #511c48;
+  border-bottom: double 18px #511c48;
+  width: 40px;
+  margin: auto;
+  margin-top: 16px;
+  height: 7px;
+
+}
+
+.bigTaskBar{
+  background-color: #b87dad;
+  color: #511c48;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  /* overflow: scroll; */
+  width: 300px;
+  padding-top:5%;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+@media (max-width: 900px) {
+.bigTaskBar{
+  width: 100%;
+  text-align: center;
+}
+
+}
+
+@media (max-height: 700px) {
+.bigTaskBar{
+  overflow: scroll;
+
+}
+.bottomSpace{
+  height: 10%;
+}
+}

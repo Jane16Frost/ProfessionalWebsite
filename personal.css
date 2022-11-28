@@ -53,7 +53,8 @@ hr{
           Generic Classes
 *************************************/
 .padded {
-  padding: 10% 5%;
+  padding: 5%;
+  padding-top: 10%;
 }
 
 .lightBacking {
@@ -86,6 +87,10 @@ hr{
 }
 .fadePicture{
   border-radius: 50px;
+}
+.heading{
+  font-size: 106px;
+  margin: 5px;
 }
 .title{
   font-size: 72px;
@@ -210,7 +215,7 @@ hr{
   width: 200px;
   border-radius: 100%;
   border: solid black 10px;
-  background-color: #ffccee;
+  background-color: #E00070;
   margin: auto;
 }
 .big{
