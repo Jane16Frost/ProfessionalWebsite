@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Exteral Links (fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;900&family=VT323&display=swap" rel="stylesheet">
+  <!-- personal images and css -->
+  <link rel="icon" href="Images(SiteWide)\favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <!-- Title -->
+  <title>Jane16Frost</title>
+</head>
+
+<body>
+  <!-- - - - - - - - - - - - -
+            Intro/Bio
+  - - - - - - - - - - - - - -->
+
+    <header>
+
+    </header>
+    
+    <main>
+        
+    <!-- - - - - - - - - - - - -
+              Intro/Bio
+    - - - - - - - - - - - - - -->
+        <section class="left">
+            <div class="pictureBox">
+                <img class="picture" src="Images(SiteWide)\GlitchyCasual.jpg" alt="A Picture of glitch relaxing and sipping hot chocolate" onresize="centerImg()" onload="centerImg()">
+            
+            </div>
+        
+            <div class="textBox">
+                <h1 class="name">Jay Franson</h1>
+                <h3 class="subtitle">Computer Engineering Technology Student</h3>
+                    <p class=bodyText>
+                        I’m Jay, an aspiring Embedded System Developer. I started coding 6 years ago for a robotics class hosted by my high school. 
+                        Seeing the code I wrote on a computer screen translate to a working robot, excited me and kicked off my coding journey. I 
+                        continued my journey by learning c++ so I could code my own small video games. While game development was exciting I missed 
+                        the building and hardware aspect. So when considering a future career, embedded system development seemed like a natural fit 
+                        for me since I love designing, coding and building projects. So I applied to NAIT’s Computer Engineering Technology Program 
+                        to learn how to develop embedded systems.
+                </p>
+            </div>
+        </section>    
+        
+        <hr>
+        
+        <!-- - - - - - - - - - - - -
+            Robots Page
+            - - - - - - - - - - - - - -->
+        <section class="right">
+            <div class="pictureBox">
+                    
+            </div>
+                
+            <div class="textBox">
+                <h2 class="title">Previous Projects</h2>
+                <h3 class="subtitle">Hardware and Software I've worked on</h3>
+                <p class="bodyText">
+                        Using my Computer Engineering Technology Knowlege I have written and designed robots. I have created a page to display
+                        the reports on robot design I have written and the robots I have created along with the journey I took to make them.
+                </p>
+                <br>
+                <a href="Robots.html" class="btn">Learn More</a>
+                    
+            </div>
+            
+        </section>
+        
+        <hr>
+        <!-- - - - - - - - - - - - -
+            Websites/Projects
+         - - - - - - - - - - - - - -->
+        <section class="left">
+
+            <div class="pictureBox">
+                 
+            </div>
+            
+            <div class="textBox">
+                
+            
+            <h2 class="title">Websites</h2>
+            <h3 class="subtitle">Links to websites I've created</h3>
+            <p class="bodyText">I can design and code websites. I enjoy coding in my free time and picked up coding websites to give
+                                myself the ability to do freelance work. I have assembled a page for links and preiveiws of all the websites I am proud of.
+            </p>
+            <br>
+                        
+            <a href="Websites.html" class="btn">Learn More</a>
+            </div>
+                    
+        </section>
+             
+        <hr>
+              
+        <!-- - - - - - - - - - - - -
+                Games Pages
+        - - - - - - - - - - - - - -->
+        <section class="right">
+        
+            <div class="pictureBox">
+                        
+            </div>
+                    
+            <div class="textBox">
+                <h2 class="title">Games</h2>
+                <h2 class="subtitle">A compilation of games I've coded</h2>
+                <p class="bodyText">Video game design and creation is a passion of mine. Over the course of many years I have coded some
+                                    fun and interact things. I've assembled a page to show case the games and explain the process I took 
+                                    to make them.
+                </p>
+                            
+                <br>
+                <a href="Games.html" class="btn">Learn More</a>
+            </div>
+        </section>
+              
+        <hr>
+
+        <!-- - - - - - - - - - - - -
+             Art Projects
+        - - - - - - - - - - - - - -->
+        <section class="left">
+          
+            <div class="pictureBox">
+                <img src="Images(SiteWide)\GoreyAngelSFX.png" alt="" class="picture">
+                
+            </div>   
+
+            <div class="textBox">
+                
+                <h2 class="title">Art Gallery</h2>
+                <h3 class="subtitle">A collection of my Art</h3>
+                <p class="bodyText">
+                    When I don't have a current project. I love to play around with concepts and ideas. I started as a
+                    traditional artist but I’ve grown my skills to be great at digital art, too. I love showing off my art and
+                    improvement over the years and this Art Gallery is where I’ll show and tell you about some of my specific projects.
+                </p>
+                <br>
+                
+                <a href="ArtGallery.html" class="btn">Learn More</a>
+            </div>
+            
+            
+        </section>
+
+                
+    </main>
+            
+            
+    <footer>
+                
+    <!-- - - - - - - - - - - - - - - - - - - -
+                Get In Touch
+        Interested in Art or Website Design?
+            Check out my previous work
+    - - - - - - - - - - - - - - - - - - - - -->
+        <h3 class="title">Interested in Hiring Me?</h3>                
+        <h2 class="subtitle">Get In Touch</h2>
+
+
+    </footer>
+  
+    <script>
+        function centerImg()
+        {
+            var images = document.getElementsByClassName("picture");
+            var height = images[0].clientHeight;
+            var boxes = document.getElementsByClassName("pictureBox");
+            var boxHeight = boxes[0].getBoundingClientRect().height;
+            //var boxHeight = boxes[0].clientHeight;
+           //alert(boxHeight);
+           images[0].style.marginTop = (boxHeight - height) / 2 + "px";
+           alert("Box Height: " + boxHeight + " Height: " + height + " Caculated Leftover: " + (boxHeight - height));
+        }
+
+    </script>
+  
+  </body>
+  
+  </html>
+
+
+</body>
+
+</html>
