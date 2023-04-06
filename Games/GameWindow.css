@@ -1,0 +1,95 @@
+/* FONTS
+ Stylized = font-family: 'VT323', monospace;
+ font-weight availabe = 400
+ Basic = font-family: 'Inconsolata', monospace;
+font-weight availabe = 300, 600, 900
+ */
+/* COLOUR PALLET
+Dark Purple = #511c48
+Light Purple = #b87dad
+light Gray = #bebebe
+Dark Gray = #292929
+ */
+body {
+  margin: 0;
+  text-align: center;
+}
+ td{
+   margin: auto;
+ }
+
+.square{
+
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 40px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  margin: 10px;
+  text-decoration: none;
+  background-color: #511c48;
+  color: #bebebe;
+  border: solid #b87dad 4px;
+}
+
+.btn:hover {
+  background: #b87dad;
+  color: #292929;
+}
+
+.titleBar {
+  background-color: #511c48;
+  color: #b87dad;
+  padding: 2% 5%;
+  font-size: 56px;
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+}
+
+.WindowSection {
+  padding: 5% 0;
+  background-color: #b87dad;
+}
+
+.gameWindow {
+  width: 80%;
+  height: 80vh;
+  background-color: #292929;
+  margin: auto;
+}
+
+.footer {
+  background-color: #511c48;
+  color: #b87dad;
+  padding: 5%;
+}
+
+.footer p, a {
+  color: #bebebe;
+}
+
+.title {
+  font-size: 72px;
+  margin: 5px;
+}
+
+.bottomBorder {
+  border-bottom: double 20px #b87dad;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.topBorder {
+  border-top: 20px;
+  border-top-color: #b87dad;
+  border-top-style: double;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}

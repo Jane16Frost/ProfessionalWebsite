@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Exteral Links (fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;900&family=VT323&display=swap" rel="stylesheet">
+  <!-- personal images and css -->
+  <link rel="icon" href="Images(SiteWide)\favicon.ico">
+  <link rel="stylesheet" href="../Robots/paper.css">
+  <title>A Maze Game</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>A-Maze-Game</h1>
+  </div>
+
+  <div class="section">
+    <h2>Designing and Creating Features</h2>
+    <p>A Maze Game is a simple project idea, I wanted to create to challenge my skills. The concept was making a game for a player to solve a maze.
+      I began with drawing out assets to be able to test and ensure my game was working properly. As seen in Figure 1, I created six tiles to represent
+      the possible directions a player could go. The six tiles can represent all possibilities by being rotated to the correct orientation. I also created
+      a player, and rabbit icon to give the user feedback and a goal. The point of the game is to catch rabbits in the maze. As a later addition I also added 
+      directional arrows to give players a hint on what direction they needed to go in, with the arrows pointing to the rabbit.
+    </p>
+    <div class="pictureBox">
+      <h4>Figure 1: Sprite Sheet</h4>
+      <img class="picture" src="AMazeGameAssests/GameSheet.png" alt="Concept Art for Character Design">
+      <h4>Note:(Created in April 2021)</h4>
+    </div>
+    <p>I also created concept art for the characters design. Leaving the possibility of a story mode option avaiable. The concept art in figure 2 shows the planning
+      of a girl being the main character. I purposfully drew her concept art with and without snow gear to potentially play around with a cold mechanic in the future.
+      I also made a mock up for a teddy bear she can carry around, which could replace the rabbits as a goal to find. The original backdrop to the game is a whimsical
+      multicoloured forest but the tiles would be easily replaceable with a snow covered forest to fit the character better.
+    </p>
+    <div class="pictureBox">
+      <h4>Figure 2: Character Concept Art</h4>
+      <img class="picture" src="AMazeGameAssests/CharacterConcept.png" alt="Concept Art for Character Design">
+      <h4>Note:(Created in April 2021)</h4>
+    </div>
+    
+  </div>
+
+  <div class="section">
+    <h2>Algorithms and Implemntation</h2>
+    <p>In the process of coding a maze game, there were two core challenges. Firstly how to represent the possible paths in a given square. The second was a maze generation
+      algorithm.
+    </p>
+    <p>Respresenting the squares is a very important detail in the creation of mazes. There are many possible way of doing it each with their own challenges. The way that first comes
+      to mind is to have the spuares either being open or blocked off. The problem with this method is that drawing the game and moving the player require the computer to check all
+      remaining squares. This is why I decided to represent the players options with only one check. I acheive this by assigning each tile a number, made out of four possible prime numbers
+      each of which having their own direction. By multiplying these numbers, I created one number and used a switch case statement to draw each tile with its correct image and orientaion. 
+      I was also able to implement character movement by checking that the tile under them had a remainder of zero when divided by the prime number corresponding to the direction the player is 
+      trying to move in. 
+    </p>
+    <p>To solve the second problem, I researched different types of maze generation algoritms. The algorithm I implemented was the Hunt and Kill method. To preform this kind of generation, 
+      the computer begins by picking a random square. It then preforms a random <i>"walk"</i> around the grid through squares that havent been visited until it has no unvisited neighbors.
+      This allows the computer to create dead ends in the maze, and is the kill part of the algorithm. The Hunt part begins by searching the grid to find a square that hasnt been visited but has
+      a visited neighbor. Once found the computer will bridge a between the squares and enter back into kill mode. Since the computer is always conecting back to the original path the player will
+      be able to reach any square in the maze. This was an important feature, becuase I wanted the player and objective to randomly spawn in the maze. If the player couldn't reach all squares the 
+      possibility of an unsolvable level arises. 
+    </p>
+    <p>
+      These core problems were very fun to solve, and make this a project Im very proud of. The rest of the code was easy to implement and made for an interesting game experience. I hope to finish
+      this project one day, including the story mode and be able to properly show it off.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Conversion</h2>
+    <p>
+      Before the game is fully implemented I decided to code a C version to be able to run it on an lcd and microcontroller.
+    </p>
+  </div>
+
+  <div class="footer topBorder">
+    <a href="../index.html" class="btn">Homepage</a>
+    <a href="../Games.html" class="btn">Game Page</a>
+
+  </div>
+
+<script src="../Robots/paper.js" charset="utf-8"></script>
+</body>
+
+</html>
